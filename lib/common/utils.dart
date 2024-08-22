@@ -3,13 +3,13 @@ import 'package:intl/intl.dart';
 String dateByStatus(Task task) {
   switch (task.status) {
     case 'Queue':
-      return _formatDateTime1(task.createdAt);
+      return _formatDateTime1(task.createdAt!);
     case 'Review':
-      return _formatDateTime1(task.submitDate);
+      return _formatDateTime1(task.submitDate!);
     case 'Approved':
-      return _formatDateTime1(task.approvedDate);
+      return _formatDateTime1(task.approvedDate!);
     case 'Rejected':
-      return _formatDateTime1(task.rejectedDate);
+      return _formatDateTime1(task.rejectedDate!);
   }
 }
 
